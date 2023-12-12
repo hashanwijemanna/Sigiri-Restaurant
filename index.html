@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigiri Restaurant & Hotel</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <style>
+        body {
+            background-color: #055daf18;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #333;
+            background-image: url('images/SigiriRock.jpg');
+            background-size: cover;
+            opacity: 0.7;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #ffffff;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #000000;
+            padding: 0.5em;
+            opacity: 0.7;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5em 1em;
+        }
+
+        nav button {
+            display: none;
+            background-color: #444;
+            color: #fff;
+            border: none;
+            padding: 0.5em 1em;
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        main {
+            padding: 1em;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            border-radius: 30px;
+        }
+
+        @media screen and (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav a {
+                margin-bottom: 0.5em;
+            }
+
+            nav button {
+                display: block;
+                align-items: left;
+            }
+
+            nav.responsive b a {
+                display: block;
+                text-align: center;
+            }
+
+            nav.responsive a {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        .logobg {
+            width: 300px;
+            border-radius: 15px;
+            background: #0000009f;
+            opacity: 0.9;
+            border-bottom: #f4f4f4;
+        }
+
+        .nav-link {
+            display: inline-block;
+            padding: 14px 16px;
+            text-decoration: none;
+            opacity: 1;
+        }
+
+        .nav-link:hover {
+            background-color: #000000; 
+        }
+
+        .nav-link.active {
+            border-radius: 20px;
+            background-color: green;
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+    
+    <header>
+        <center><div class="logobg"><font size="20" color="#ffffff" style="font-family: cursive;"><b>Sigiri</b></font> &nbsp;&nbsp;Restaurant & Hotel.</div></center>
+    <br><br>
+
+    <nav><b>
+        <a href="index.html" class="nav-link active"><b>Home</b></a>
+        <a href="aboutus.html" class="nav-link"><b>About us</b></a>
+        <a href="menu.html" class="nav-link"><b>Menu</b></a>
+        <a href="contactus.html" class="nav-link"><b>Contact us</b></a>
+    </nav>
+    </header>
+    
+    <main>
+        <center>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide active">
+                    <img src="images/slider1.jpeg" alt="Image 1">
+                </div>
+                <div class="slide">
+                    <img src="images/slider2.jpeg" alt="Image 2">
+                </div>
+                <div class="slide">
+                    <img src="images/slider3.jpeg" alt="Image 3">
+                </div>
+                <div class="slide">
+                    <img src="images/slider4.jpeg" alt="Image 4">
+                </div>
+                <div class="slide">
+                    <img src="images/slider5.jpg" alt="Image 5">
+                </div>
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+        </center><br><br><br>
+    
+        <font style="font-family: cursive; color: #555;">
+        <font size="4"><b>Welcome to Sigiri Restaurant,</b></font> an exquisite culinary haven nestled near the iconic Sigiriya Rock in the heart of Sri Lanka!<br><br> Our restaurant is a celebration of the rich cultural tapestry of this beautiful island, offering a dining experience that is as unique and captivating as the historic landmark that graces our surroundings.<br><br>
+
+        At Sigiri Restaurant, we take pride in curating a menu that reflects the diverse flavors and traditions of Sri Lankan cuisine. Our chefs skillfully blend the aromatic spices and fresh, locally-sourced ingredients to create a symphony of tastes that transport you to the heart of this vibrant island.<br><br>
+        
+        Immerse yourself in the warm and inviting ambiance of our restaurant, where traditional elements seamlessly blend with modern design. Whether you choose to dine indoors surrounded by tasteful decor or prefer the open-air experience with views of Sigiriya Rock in the distance, every corner of our space is designed to enhance your dining pleasure.<br>
+        
+        Our commitment to exceptional service is matched only by our dedication to providing a memorable culinary journey. From savory curries to delectable seafood, each dish is crafted with precision and passion, inviting you to savor the essence of Sri Lankan gastronomy.<br><br>
+        
+        As you embark on a culinary adventure at Sigiri Restaurant, let the flavors, aromas, and hospitality transport you to the heart of Sri Lanka. Join us for a dining experience that transcends the ordinary, where every meal tells a story and every moment is a celebration of the senses. Welcome to Sigiri Restaurant – where tradition meets innovation, and every bite is a journey through the culinary wonders of Sri Lanka.
+        <br><br><center>Visit and enjoy!!</center>
+        
+        </font>
+    <br><br>
+    
+    
+    
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 SigiriUI. All rights reserved.</p>
+    </footer>
+
+    <script src="javascript/index.js" defer></script>
+    
+</body>
+
+</html>
