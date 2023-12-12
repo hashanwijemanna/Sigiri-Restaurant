@@ -5,8 +5,9 @@ body {
 
 .slider-container {
   position: relative;
-  max-width: 100%;
-  margin: auto;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .slider {align-items: center;
@@ -36,10 +37,21 @@ button {
   cursor: pointer;
 }
 
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  color: #0707079e;
+}
+
 .prev {
-  left: 10px;
+  left: 0;
 }
 
 .next {
-  right: 10px;
+  right: 0;
 }

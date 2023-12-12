@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sigiri-Contact Us</title>
+    <link rel="icon" href="images/logo.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="#">
     <style>
         body {
@@ -32,7 +33,7 @@
             justify-content: center;
             background-color: #000000;
             padding: 0.5em;
-            opacity: 0.7;
+            opacity: 0.9;
         }
 
         nav a {
@@ -116,6 +117,43 @@
             background-color: green;
             color: white;
         }
+
+
+    
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 
@@ -136,13 +174,14 @@
     <main>
         <font style="font-family: cursive; color: #555;">
             <form id="contactForm" action="process_form.php" method="post">
+                <center><b><h1><font style="font-family:Arial, Helvetica, sans-serif;">Contact Us</font></h1></b></center><br>
                 <label for="fullName">Full Name:</label>
                 <input type="text" id="fullName" name="fullName" required>
     
                 <label for="email">Email Address:</label>
                 <input type="email" id="email" name="email" required>
     
-                <label for="feedback">Feedback:</label>
+                <label for="feedback">Message:</label>
                 <textarea id="feedback" name="feedback" rows="4" required></textarea>
     
                 <input type="submit" value="Submit">
@@ -154,7 +193,14 @@
     </main>
 
     <footer>
-        <p>&copy; 2023 SigiriUI. All rights reserved.</p>
+        <p>&copy; 2023 SigiriUI. All rights reserved.</p><br><br>
+        <center>
+            <a href="tel:+94768497721"><img src="images/contact/phone.png" alt="phone" style="width: 25px; height: 25px;"></a> &nbsp;&nbsp;
+            <a href=""><img src="images/contact/email.png" alt="email" style="width: 25px; height: 25px;"></a>
+            <img src="images/contact/facebook.png" alt="facebook" style="width: 25px; height: 25px;">&nbsp;&nbsp;
+            <img src="images/contact/insta.png" alt="insta" style="width: 25px; height: 25px;">&nbsp;&nbsp
+            <img src="images/contact/twitter.png" alt="twittwer" style="width: 25px; height: 25px;">
+        </center><br><br>
     </footer>
 
 
